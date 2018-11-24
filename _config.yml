@@ -9,7 +9,5 @@ plugins:
     - jekyll-relative-links
 relative_links:
     enabled: true
-    collections:
-        posts:
-            output: true
-            pemalink: /:title/
+    collections: true
+pemalink: /:title/
