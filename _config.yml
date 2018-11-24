@@ -11,9 +11,4 @@ relative_links:
     enabled: true
     collections: true
 permalink: /:title
-jekyll-archives:
-    enabled: []
-    layout: 'archive'
-    permalinks:
-        tag: '/tag/:title'
 
