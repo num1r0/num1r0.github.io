@@ -6,11 +6,11 @@ layout: default
     <div>
         <h1 class="post_title center">
             <span class="green">[</span>
-            {{post.title}}
+            {{page.title}}
             <span class="green">]</span>
         </h1>
         <p class="post_meta green-dark center">
-            === Added on:  ===
+            === Added on: {{ page.date | date: "%b %-d, %Y" }} ===
         </p>
     </div>    
     {{content}}
