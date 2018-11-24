@@ -10,4 +10,4 @@ plugins:
 relative_links:
     enabled: true
     collections: true
-pemalink: /:title/
+permalink: /:title
