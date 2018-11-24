@@ -3,10 +3,17 @@ layout: default
 ---
 
 {{content}}
-<ul class="myposts">
-    {% for post in site.posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </li>
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+    <article>
+        <div>
+            <h2 class="post_title center">
+                <span class="green">[</span>
+                {{post.title}}
+                <span class="green">]</span>
+            </h2>
+            <p class="post_meta green-dark center">
+                === Added on: {{ post.date | date: "%b %-d, %Y" }} ===
+            </p>
+        </div>
+    </article>
+{% endfor %}

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article>
+    <div>
+        <h1 class="post_title center">
+            <span class="green">[</span>
+            {{post.title}}
+            <span class="green">]</span>
+        </h1>
+        <p class="post_meta green-dark center">
+            === Added on: {{ post.date | date: "%b %-d, %Y" }} ===
+        </p>
+    </div>    
+    {{content}}
+</article>
