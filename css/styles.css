@@ -1,6 +1,6 @@
 @font-face {
     font-family: "special_font";
-    src: url('fonts/retron.ttf') format('truetype');
+    src: url('https://num1r0.github.io/fonts/retron.ttf') format('truetype');
 }
 .red {
     color: #990000;
