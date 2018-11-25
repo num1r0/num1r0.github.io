@@ -1,3 +1,5 @@
+@import url(colorful.css);
+
 @font-face {
     font-family: "special_font";
     src: url('https://num1r0.github.io/fonts/retron.ttf') format('truetype');
@@ -94,8 +96,4 @@ footer {
 }
 .center {
     text-align: center;
-}
-.highlight {
-    background: #313131;
-    font-size: 18px;
 }
