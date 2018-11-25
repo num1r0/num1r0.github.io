@@ -11,4 +11,5 @@ relative_links:
     enabled: true
     collections: true
 permalink: /:title
+highlighter: rouge
 
