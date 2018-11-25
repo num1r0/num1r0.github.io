@@ -95,3 +95,7 @@ footer {
 .center {
     text-align: center;
 }
+.highlight {
+    background: #313131;
+    font-size: 18px;
+}
