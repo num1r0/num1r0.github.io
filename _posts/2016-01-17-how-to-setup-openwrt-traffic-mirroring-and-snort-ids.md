@@ -6,7 +6,7 @@ This simple tutorial describes how to configure traffic mirroring on your OpenWR
 
 First of all you need an OpenWRT compatible router (see [Official list](https://wiki.openwrt.org/toh/start "OpenWRT Wiki")) with a freshly installed distribution. In this tutorial I’m using a TP-Link TL-WR841ND with 14.07 Barrier Breaker (see screenshot below).
 
-![Traffic mirroring. Barrier Breaker 14.07](../img/openwrt.png)
+![Traffic mirroring. Barrier Breaker 14.07](../img/openwrt.png){:.post_image}
 
 Use SSH to connect to your network device and install **iptables-mod-tee** package:
 
@@ -24,7 +24,7 @@ opkg list-installed | grep "mod-tee"
 
 After the installation, you should have kmod-ipt-tee package installed automatically as dependency (see screenshot below):
 
-![Traffic mirroring. iptables-mod-tee installed successfully](../img/openwrt1.png)
+![Traffic mirroring. iptables-mod-tee installed successfully](../img/openwrt1.png){:.post_image}
 
 ## Troubleshooting
 
@@ -37,7 +37,7 @@ iptables -t mangle -A POSTROUTING ! -s 192.168.1.0/24 -j TEE --gateway 192.168.1
 
 Most of the time it will result in an error (see screenshot below).
 
-![Most common error](../img/iptables.png)
+![Most common error](../img/iptables.png){:.post_image}
 
 Because iptables-mod-tee is a kernel module it should be loaded before you are trying to get use of it. So, let’s try to load our newly installed module: **xt_TEE**.
 
