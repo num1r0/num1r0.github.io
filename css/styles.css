@@ -78,6 +78,13 @@ span {
     clip: rect(0px,60px,200px,0px);
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
 footer {
     font-family: Courier New, Courier, monospace;
     margin-top: 100px;
