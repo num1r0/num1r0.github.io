@@ -2,7 +2,7 @@
 title: CrackMe challenges for Android
 layout: post
 ---
-![Reverse Engineering Android](../img/android_reverse_engineering.png){:.post_image}
+Let's solve some crackme challenges for Android. This post is going to be updated once new crackmes are out. All files have been tested both, in emulator and on physical device, so running them shouldn't be a problem.
 
 ## Description.
 
