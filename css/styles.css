@@ -55,10 +55,10 @@ article {
 article p {
     font-size: 20px;
 }
-span {
+/* span {
     font-size: 22px;
     text-decoration: none;
-}
+} */
 .post_meta {
     font-size: 15px;
     margin-top: -10px;
