@@ -1,4 +1,4 @@
-@import url(colorful.css);
+@import url(monokai.css);
 
 @font-face {
     font-family: "special_font";
@@ -55,10 +55,6 @@ article {
 article p {
     font-size: 20px;
 }
-/* span {
-    font-size: 22px;
-    text-decoration: none;
-} */
 .post_meta {
     font-size: 15px;
     margin-top: -10px;
@@ -70,7 +66,7 @@ article p {
     margin-right: auto;
     margin-top: 55px;
     margin-bottom: 55px;
-    border:1px solid #014101;
+    border: 2px solid #313030;
     width: 60%;
 }
 .header_image {
