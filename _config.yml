@@ -7,9 +7,12 @@ github_account: num1r0
 plugins:
     - jekyll-seo-tag
     - jekyll-relative-links
+    - jekyll-paginate
 relative_links:
     enabled: true
     collections: true
 permalink: /:title
 highlighter: rouge
+paginate: 2
+paginate_path: /:num
 
