@@ -104,6 +104,7 @@ code.highlighter-rouge {
 }
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 td, th {
     border: 2px solid #534f4f;
