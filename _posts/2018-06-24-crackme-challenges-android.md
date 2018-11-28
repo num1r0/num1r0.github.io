@@ -1,6 +1,7 @@
 ---
 title: CrackMe challenges for Android
 layout: post
+permalink: crackme-challenges-android
 ---
 Let's solve some crackme challenges for Android. This post is going to be updated once new crackmes are out. All files have been tested both, in emulator and on physical device, so running them shouldn't be a problem.
 

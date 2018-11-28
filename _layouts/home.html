@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
     <article>
         <div>
             <h2 class="post_title">
@@ -20,7 +20,7 @@ layout: default
 
 <!-- Pagination -->
 <!-- Pagination links -->
-<!-- <div class="pagination">
+<div class="pagination">
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">
             Previous
@@ -36,7 +36,7 @@ layout: default
     {% else %}
         <span class="next ">Next</span>
     {% endif %}
-</div> -->
+</div>
 
 
 <!-- {% if paginator.total_pages > 1 %}
