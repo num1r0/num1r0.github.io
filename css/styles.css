@@ -39,7 +39,7 @@ body {
     text-decoration: none;
 }
 a {
-    text-decoration: underline overline;
+    text-decoration: none;
     color: #fff;
 }
 article {
@@ -101,4 +101,12 @@ code.highlighter-rouge {
     background: #291717;
     border: 2px solid #313030;
     border-radius: 2px;
+}
+table {
+    width: 100%;
+}
+td th {
+    border: 2px solid #534f4f;
+    text-align: left;
+    padding: 5px;
 }
