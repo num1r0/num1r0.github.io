@@ -11,8 +11,8 @@ plugins:
 relative_links:
     enabled: true
     collections: true
-permalink: /:title
+# permalink: /:title
 highlighter: rouge
 paginate: 2
-paginate_path: /:num
+paginate_path: /page:num/
 
