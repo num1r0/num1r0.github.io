@@ -111,3 +111,6 @@ td, th {
     text-align: left;
     padding: 5px;
 }
+pre {
+    overflow-x: auto;
+}
