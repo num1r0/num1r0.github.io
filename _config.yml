@@ -14,5 +14,5 @@ relative_links:
 # permalink: /:title
 highlighter: rouge
 paginate: 2
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 
