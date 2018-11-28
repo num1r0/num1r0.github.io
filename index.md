@@ -1,4 +1,4 @@
 ---
 title: Main Page
-layout: home
+layout: index
 ---
