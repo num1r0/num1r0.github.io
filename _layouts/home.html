@@ -9,9 +9,6 @@ layout: default
     {% else %}
         <span class="next ">&lt;&lt; Older</span>
     {% endif %}
-    <span class="page_number ">
-        <br>Total posts: {{site.posts | size}}
-    </span>
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">
             Newer &gt;&gt;
@@ -19,6 +16,10 @@ layout: default
     {% else %}
         <span class="previous">Newer &gt;&gt;</span>
     {% endif %}
+    <br>
+    <span class="page_number ">
+        Total posts: {{site.posts | size}}
+    </span>
 </div>
 
 {% for post in paginator.posts %}
