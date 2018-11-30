@@ -13,6 +13,6 @@ relative_links:
     collections: true
 # permalink: /:title
 highlighter: rouge
-paginate: 2
+paginate: 7
 paginate_path: /page:num/
 
