@@ -4,20 +4,21 @@ layout: default
 
 <!-- Pagination -->
 <div class="pagination">
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">
-            Previous
-        </a>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Newer</a>
     {% else %}
-        <span class="previous">Previous</span>
+        <span class="next ">Newer</span>
     {% endif %}
     <span class="page_number ">
         Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        Total posts: {{site.posts | size}}
     </span>
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+            Older
+        </a>
     {% else %}
-        <span class="next ">Next</span>
+        <span class="previous">Older</span>
     {% endif %}
 </div>
 
