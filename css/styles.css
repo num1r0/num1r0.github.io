@@ -124,7 +124,7 @@ pre {
     margin-right: auto;
     margin-top: 80px;
 }
-.older .newer {
+.older, .newer {
     font-size: 20px;
 }
 .total_posts {
