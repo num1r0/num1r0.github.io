@@ -5,19 +5,19 @@ layout: default
 <!-- Pagination -->
 <div class="pagination">
     {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">&lt;&lt; Older</a>
+        <a href="{{ paginator.next_page_path }}" class="older">&lt;&lt; Older</a>
     {% else %}
-        <span class="next ">&lt;&lt; Older</span>
+        <span class="older">&lt;&lt; Older</span>
     {% endif %}
     {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">
+        <a href="{{ paginator.previous_page_path }}" class="newer">
             Newer &gt;&gt;
         </a>
     {% else %}
-        <span class="previous">Newer &gt;&gt;</span>
+        <span class="newer">Newer &gt;&gt;</span>
     {% endif %}
     <br>
-    <span class="page_number ">
+    <span class="total_posts">
         Total posts: {{site.posts | size}}
     </span>
 </div>
