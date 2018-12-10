@@ -131,13 +131,13 @@ pre {
 }
 @media only screen and (max-width: 600px) {
     /* Mobile */
-    resp_w { width: 90%; }
+    .resp_w { width: 90%; }
 }
 @media only screen and (min-width: 992px) {
     /* Desktops */
-    resp_w { width: 75%; }
+    .resp_w { width: 75%; }
 }
 @media only screen and (min-width: 1200px) {
     /* Wide screens */
-    resp_w { width: 60%; }
+    .resp_w { width: 60%; }
 }
