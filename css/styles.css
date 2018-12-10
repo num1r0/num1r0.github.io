@@ -129,11 +129,11 @@ pre {
 .total_posts {
     font-size: 13px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
     /* Mobile */
     .resp_w { width: 90%; }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
     /* Desktops */
     .resp_w { width: 75%; }
 }
