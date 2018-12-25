@@ -2,8 +2,8 @@ title: Persianov on Security
 email: persianov.s@gmail.com
 description: >
     My security blog. To be edited later.
-twitter_account: num1r0
-github_account: num1r0
+# twitter_account: num1r0
+# github_account: num1r0
 plugins:
     - jekyll-seo-tag
     - jekyll-relative-links
@@ -14,3 +14,6 @@ relative_links:
 highlighter: rouge
 paginate: 7
 paginate_path: /page:num/
+twitter:
+    username: num1r0
+    card: summary

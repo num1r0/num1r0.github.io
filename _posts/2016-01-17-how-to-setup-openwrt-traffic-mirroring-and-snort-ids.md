@@ -1,8 +1,8 @@
 ---
 title: Traffic mirroring setup on OpenWRT device
+description: test test test
 layout: post
 permalink: how-to-setup-openwrt-traffic-mirroring-and-snort-ids
-description: test test test
 ---
 This simple tutorial describes how to configure traffic mirroring on your OpenWRT capable router (using iptables) and send it to Snort IDS. Having an IDS running in your local network sometimes can help find infected machines connected to it, LAN attacks which can lead to sessions hijacking, Man-in-the-middle attacks and other nasty things.
 
