@@ -14,7 +14,7 @@
     color: #027a02;
 }
 html {
-    background: #242424;
+    background: #1e1e1b;
     color: #c2c0c0;
     height: 100%;
     font-family: "special_font";
@@ -69,8 +69,8 @@ article p {
     width: 60%;
 }
 .header_image {
-    width: 50%;
-    height: 150px;
+    width: 35%;
+    height: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
