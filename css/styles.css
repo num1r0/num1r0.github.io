@@ -69,7 +69,6 @@ article p {
     width: 60%;
 }
 .header_image {
-    height: 210px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -131,15 +130,24 @@ pre {
 @media only screen and (max-width: 990px) {
     /* Mobile */
     .resp_w { width: 90%; }
-    .header_image { width: 90%; }
+    .header_image { 
+        width: 90%;
+        height: 100px; 
+    }
 }
 @media only screen and (min-width: 991px) {
     /* Desktops */
     .resp_w { width: 75%; }
-    .header_image { width: 35%; }
+    .header_image { 
+        width: 35%;
+        height: 210px; 
+    }
 }
 @media only screen and (min-width: 1200px) {
     /* Wide screens */
     .resp_w { width: 60%; }
-    .header_image { width: 35%; }
+    .header_image { 
+        width: 35%;
+        height: 210px; 
+    }
 }
