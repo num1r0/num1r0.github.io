@@ -147,7 +147,7 @@ pre {
     /* Wide screens */
     .resp_w { width: 60%; }
     .header_image { 
-        width: 35%;
+        width: 30%;
         height: 210px; 
     }
 }
