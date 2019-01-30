@@ -132,7 +132,7 @@ pre {
     .resp_w { width: 90%; }
     .header_image { 
         width: 90%;
-        height: 100px; 
+        height: 100%; 
     }
 }
 @media only screen and (min-width: 991px) {
@@ -140,7 +140,7 @@ pre {
     .resp_w { width: 75%; }
     .header_image { 
         width: 35%;
-        height: 210px; 
+        height: 39%; 
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -148,6 +148,6 @@ pre {
     .resp_w { width: 60%; }
     .header_image { 
         width: 30%;
-        height: 210px; 
+        height: 33%; 
     }
 }
