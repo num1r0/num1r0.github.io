@@ -2,7 +2,7 @@
 title: CrackMe challenges for Android
 description: Some crackme challenges for Android. Sorted in 3 different difficulty levels and easy to run on any Android emulator. Download and try your RE skills!
 layout: post
-permalink: crackme-challenges-android
+permalink: crackme-challenges-for-android
 image: "img/android_reverse_eng.png"
 ---
 Let's solve some crackme challenges for Android. This post is going to be updated once new crackmes are out. All files have been tested both, in emulator and on physical device, so running them shouldn't be a problem.
