@@ -1,5 +1,6 @@
 ---
 title: Extract from pdf with textract. HOW TO
+description: How to extract text from pdf files, using Python's textract module. This article covers the issues you can face during environment setup.
 layout: post
 permalink: extract-from-pdf
 image: "img/pdf_textract.png"

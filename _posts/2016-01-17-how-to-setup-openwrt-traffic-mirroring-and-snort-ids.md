@@ -1,6 +1,6 @@
 ---
 title: Traffic mirroring setup on OpenWRT device
-description: test test test
+description: How to setup traffic mirroring on OpenWRT device (using iptables) and send it to a Snort IDS instance running in the same local network
 layout: post
 permalink: how-to-setup-openwrt-traffic-mirroring-and-snort-ids
 image: "img/openwrt.png"

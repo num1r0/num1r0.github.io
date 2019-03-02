@@ -1,5 +1,6 @@
 ---
 title: Newsletters vs humanity. Flood PoC
+description: How to flood email boxes using mailing lists and 'RSS to email' aggregators. A research about disrupting normal activity of an email account.
 layout: post
 permalink: flood-email-newsletters-vs-humanity
 image: "img/email_flood.png"
