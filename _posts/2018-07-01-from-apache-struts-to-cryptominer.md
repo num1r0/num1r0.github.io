@@ -1,5 +1,5 @@
 ---
-title: From Apache Struts to Cryptominer.
+title: From Apache Struts to Cryptominers
 description: Hackers attacking web servers, running Java, with Apache Struts 2 exploits to install cryptominers on Linux/Windows powered machines.
 layout: post
 permalink: from-apache-struts-to-cryptominer
