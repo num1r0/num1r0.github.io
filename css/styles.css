@@ -125,9 +125,6 @@ pre {
 .total_posts {
     font-size: 13px;
 }
-.crackme-challenges {
-    table-layout: fixed;
-}
 .crackme-challenges td {
     word-wrap: break-word;
 }
