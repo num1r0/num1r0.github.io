@@ -125,6 +125,12 @@ pre {
 .total_posts {
     font-size: 13px;
 }
+.crackme-challenges {
+    table-layout: fixed;
+}
+.crackme-challenges td {
+    word-wrap: break-word;
+}
 @media only screen and (max-width: 990px) {
     /* Mobile */
     .resp_w { width: 90%; }
