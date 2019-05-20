@@ -11,21 +11,21 @@ layout: default
         <thead>
             <tr>
                 <th width="15%">Name</th>
-                <th width="45%">Description</th>
-                <th width="13%">Difficulty</th>
+                <th width="50%">Description</th>
+                <th width="8%">Lvl</th>
                 <th width="12%">Added on</th>
                 <th width="15%">How to solve</th>
             </tr>
         </thead>
         <tbody>
             {% for crackme in site.data.crackmes %}
-            <tr>
-                <td>{{ crackme.name }}</td>
-                <td>{{ crackme.description }}</td>
-                <td>{{ crackme.difficulty }}</td>
-                <td>{{ crackme.added_on }}</td>
-                <td>{{ crackme.how_to_solve }}</td>
-            </tr>
+                <tr>
+                    <td width="15%"><a href="{{ crackme.download_link }}">{{ crackme.name }}</a></td>
+                    <td width="50%">{{ crackme.description }}</td>
+                    <td width="8%">{{ crackme.difficulty }}</td>
+                    <td width="12%">{{ crackme.added_on }}</td>
+                    <td width="15%"><a href="{{ crackme.how_to_solve_link }}">Guide</a></td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>
