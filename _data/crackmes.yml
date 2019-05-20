@@ -21,7 +21,7 @@
 
 - name: insider_threat
   description: Just find the flag. It's somewhere in there =))
-  difficulty: VERY EASY
+  difficulty: EASY
   added_on: 2019-05-20
   how_to_solve_link: #
   download_link: https://drive.google.com/open?id=1cFivIJ0jNZoze1ZTYl9tpgO6W2z0V4ui
