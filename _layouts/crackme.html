@@ -20,11 +20,11 @@ layout: default
         <tbody>
             {% for crackme in site.data.crackmes %}
             <tr>
-                <td>crackme.name</td>
-                <td>crackme.description</td>
-                <td>crackme.difficulty</td>
-                <td>crackme.added_on</td>
-                <td>crackme.how_to_solve</td>
+                <td>{{ crackme.name }}</td>
+                <td>{{ crackme.description }}</td>
+                <td>{{ crackme.difficulty }}</td>
+                <td>{{ crackme.added_on }}</td>
+                <td>{{ crackme.how_to_solve }}</td>
             </tr>
             {% endfor %}
         </tbody>
