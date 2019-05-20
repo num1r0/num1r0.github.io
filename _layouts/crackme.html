@@ -12,19 +12,19 @@ layout: default
             <tr>
                 <th width="15%">Name</th>
                 <th width="50%">Description</th>
-                <th width="8%">Lvl</th>
+                <th width="8%" style="text-align: center">Lvl</th>
                 <th width="12%">Added on</th>
-                <th width="15%">How to solve</th>
+                <th width="13%" style="text-align: center">How to solve</th>
             </tr>
         </thead>
         <tbody>
             {% for crackme in site.data.crackmes %}
                 <tr>
-                    <td width="15%"><a href="{{ crackme.download_link }}">{{ crackme.name }}</a></td>
-                    <td width="50%">{{ crackme.description }}</td>
-                    <td width="8%">{{ crackme.difficulty }}</td>
-                    <td width="12%">{{ crackme.added_on }}</td>
-                    <td width="15%"><a href="{{ crackme.how_to_solve_link }}">Guide</a></td>
+                    <td><a href="{{ crackme.download_link }}">{{ crackme.name }}</a></td>
+                    <td>{{ crackme.description }}</td>
+                    <td style="text-align: center"><code class="highlighter-rouge">{{ crackme.difficulty }}</code></td>
+                    <td style="text-align: center">{{ crackme.added_on }}</td>
+                    <td style="text-align: center"><a href="{{ crackme.how_to_solve_link }}">Guide</a></td>
                 </tr>
             {% endfor %}
         </tbody>
