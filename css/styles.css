@@ -174,10 +174,9 @@ pre {
     margin: 0px;
     margin-bottom: 10px;
     padding: 5px 10px 5px 10px;
-    opacity: 0.4;
 }
 .share-button:hover {
-    opacity: 0.8;
+    opacity: 1;
     color: #ffffff;
 }
 
