@@ -182,10 +182,10 @@ pre {
 
 /* Facebook button */
 .fa-facebook {
-    color: #3b5998;
+    color: #4566af;
 }
 .fa-facebook:hover {
-    background-color: #3b5998;
+    background-color: #4566af;
 }
 
 /* Twitter button */
@@ -214,9 +214,9 @@ pre {
 
 /* Email button */
 .fa-envelope {
-    color: #444444;
+    color: #706f6f;
 }
 .fa-envelope:hover {
-    background-color: #444444;
+    background-color: #706f6f;
 }
 
