@@ -3,7 +3,7 @@ title: Windows worms. Forbix worm analysis.
 description: Old Windows worms which are still alive. Analyzing Forbix worm, a simple malware difficult to remove even today.
 layout: post
 permalink: windows-worms-forbix-worm-analysis
-image: "img/emotet_malware/banner.jpg"
+image: "img/forbix_malware/banner.jpg"
 ---
 Anyone heard about Forbix worm? Good. Lots of us know how difficult is to remove a worm from an infected system or network. Of course it depends on multiple factors, like: the way it spreads, persistence mechanisms, disguise techniques used once machine is infected, reinfection methods, etc. These days, when someone says "Windows worm" we usually expect a highly sophisticated piece of malware, exploiting a 0-day/1-day vulnerability and "preferably" this vulnerability being in a service listening on a specific port exposed to the whole world. May be this is the case of the worm like ransomware WannaCry, but definitely not applicable to Forbix malware.
 
