@@ -68,7 +68,7 @@ All these are implemented in the following functions: `infect_drives`, `infect_r
 
 ![Forbix infinite loop](../img/forbix_malware/infinite_loop.png){:.post_image}
 
-### infect_drives function
+### infect_drives() function
 
 This function checks for all available drives and infects only **removable**, **CD-ROM** and **network drives** (`DriveType: 1, 3, 4`), avoiding the System Drive. 
 
@@ -83,19 +83,19 @@ Next phase is about .LNK files creation and hiding original files. This also app
 
 ![Forbix files replacement](../img/forbix_malware/replace_files.png){:.post_image}
 
-### infect_registre function
+### infect_registre() function
 
 It is responsible for making the malware persistent. It creates one new Registry Key named with the current active name of the program inside `\Software\Microsoft\Windows\CurrentVersion\Run\`. 
 
 ![Forbix registry infection](../img/forbix_malware/infect_registre.png){:.post_image}
 
-### protect_del function
+### protect_del() function
 
 This function is responsible to maintain an up-to-date copy of the script in Windows temporary directory, by overwriting the existing one *(if any)*.
 
 ![Forbix self protection mechanism](../img/forbix_malware/self_protection.png){:.post_image}
 
-### kill_old function
+### kill_old() function
 
 In order to keep just one (newest) version of the worm running, function `kill_old` is called periodically to remove the remaining artifacts of the previous Forbix.A version.
 
