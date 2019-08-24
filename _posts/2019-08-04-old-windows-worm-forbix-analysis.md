@@ -12,7 +12,7 @@ Based on the domain name this malware kept trying to connect, it was very easy t
 
 
 
-# General information
+## General information
 
 Forbix is a Windows worm written purely in Visual Basic. First references about it date March 2016. Based on the sample found recently, looks like it wasn't updated since then, however this strain is still alive even since now.
 
@@ -27,10 +27,6 @@ There are several states this malware can be. As described later in this article
 ![Running file and binwalk](../img/forbix_malware/encoded_file_analysis.png){:.post_image}
 
 I was surprised to see that, at the time of this writing, about a half of VirusTotal engines do not find the decoded version malicious (28/53): **MalwareBytes**, Comodo, F-Secure, F-Prot, Avira. It gets even more interesting when I change the C2 domain and the names of files this malware creates: 21/53. This time **Kaspersky**, **Microsoft Defender**, **Sophos**, **McAfee** and **ClamAV** also made into the list. 
-
-
-
-# Detailed analysis
 
 
 ## Forbix .LNK files
@@ -72,7 +68,7 @@ All these are implemented in the following functions: `infect_drives`, `infect_r
 
 ![Forbix infinite loop](../img/forbix_malware/infinite_loop.png){:.post_image}
 
-### `infect_drives` function
+### infect_drives function
 
 This function checks for all available drives and infects only **removable**, **CD-ROM** and **network drives** (`DriveType: 1, 3, 4`), avoiding the System Drive. 
 
@@ -87,25 +83,25 @@ Next phase is about .LNK files creation and hiding original files. This also app
 
 ![Forbix files replacement](../img/forbix_malware/replace_files.png){:.post_image}
 
-### `infect_registre` function
+### infect_registre function
 
 It is responsible for making the malware persistent. It creates one new Registry Key named with the current active name of the program inside `\Software\Microsoft\Windows\CurrentVersion\Run\`. 
 
 ![Forbix registry infection](../img/forbix_malware/infect_registre.png){:.post_image}
 
-### `protect_del` function
+### protect_del function
 
 This function is responsible to maintain an up-to-date copy of the script in Windows temporary directory, by overwriting the existing one *(if any)*.
 
 ![Forbix self protection mechanism](../img/forbix_malware/self_protection.png){:.post_image}
 
-### `kill_old` function
+### kill_old function
 
 In order to keep just one (newest) version of the worm running, function `kill_old` is called periodically to remove the remaining artifacts of the previous Forbix.A version.
 
 ![Forbix replace older version](../img/forbix_malware/kill_old.png){:.post_image}
 
-### C2 communications
+## C2 communications
 
 During the self update process, `get_new_v` and `bot_up` functions are called. These are responsible for preparing files of the new version of the worm and executing it respectively. 
 Besides that, `bot_up` function is also used to execute stage 2 modules, which are being downloaded from the C2 server.
@@ -122,7 +118,7 @@ C2 communications with the server is implemented around 3 commands:
 
 
 
-# Conclusion
+## Conclusion
 
 Since early 2016 Forbix was found in the wild, infecting Windows PCs. Even if it doesn't use any sophisticated techniques to spread, persist and load payloads, multiple AV engines still
 fail to detect and remove it. Looks like there are still multiple requests to realy[.]mooo[.]com domain nowadays. If you have an old USB drive and not sure to access the files on it or not, make sure to scan it. Before opening any folder or file, check if "Manuel.doc" file exists in the root directory of the drive.
