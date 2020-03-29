@@ -1,5 +1,5 @@
 ---
-title: Cyber side of coronavirus. WSHRAT "Corona" Campaign
+title: Cyber side of Coronavirus. WSHRAT "Corona" Campaign
 description: Coronavirus malware campaigns are on the rise. Multiple malicious actors retrofitted their tools to exploit current global pandemic.
 layout: post
 permalink: cyber-side-of-coronavirus-pandemic
