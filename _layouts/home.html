@@ -25,11 +25,11 @@ layout: default
 {% for post in paginator.posts %}
     <article class="resp_w">
         <div>
-            <h1 class="post_title">
+            <h2 class="post_title">
                 <a href="{{post.url}}">
                     <span class="green">[</span>{{ post.title }}<span class="green">]</span>
                 </a>
-            </h1>
+            </h2>
             <p class="post_meta green-dark">
                 === Added on: {{ post.date | date: "%b %-d, %Y" }} ===
             </p>
