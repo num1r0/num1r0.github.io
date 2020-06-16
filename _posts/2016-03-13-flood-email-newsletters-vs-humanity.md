@@ -13,19 +13,19 @@ Aloha! Today I’m gonna show you a simple yet powerful way to flood any mail bo
 
 First of all, let’s look at how somebody gets subscribed to an RSS Feed nowadays (Check image below).
 
-![Subscribe sequence diagram](../img/subscribe.png){:.post_image}
+[ ![Subscribe sequence diagram](../img/subscribe.png){:.post_image} ](../img/subscribe.png)
 
 As you probably mentioned, we can use “Send confirmation email” step to flood a mail box. BUT there is a bottleneck… We need a HUGE list of websites, which allow their users to subscribe for news and updates.
 The attack vector looks like this:
 
-![Attack vector](../img/attack_vector.png){:.post_image}
+[ ![Attack vector](../img/attack_vector.png){:.post_image} ](../img/attack_vector.png)
 
 Let’s use mailing lists and RSS to email services, like blogtrottr.com, to avoid the necessity of crawling the Web for websites with newsletter subscriptions and add a layer of anonymity.
 Below you can see typical web forms for GNU Mailman and Blogtrotr aggregator:
 
-![Redhat mailing list](../img/redhat_mailing_list.png){:.post_image}
+[ ![Redhat mailing list](../img/redhat_mailing_list.png){:.post_image} ](../img/redhat_mailing_list.png)
 
-![Blogtrotr aggregator](../img/blogtrotr.png){:.post_image}
+[ ![Blogtrotr aggregator](../img/blogtrotr.png){:.post_image} ](../img/blogtrotr.png)
 
 Because these services usually are not secured by any Captcha Code, it is possible to automate the whole flood process.
 
@@ -235,9 +235,9 @@ fits.py <number_of_emails_to_send> <path_to_rss_feeds_file> <path_to_recipients_
 
 A picture is worth one thousand words (second picture free of charge =))
 
-![Inbox before](../img/inbox_before.png){:.post_image}
+[ ![Inbox before](../img/inbox_before.png){:.post_image} ](../img/inbox_before.png)
 
-![Inbox after](../img/inbox_after.png){:.post_image}
+[ ![Inbox after](../img/inbox_after.png){:.post_image} ](../img/inbox_after.png)
 
 ## Conclusions.
 

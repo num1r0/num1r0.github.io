@@ -27,7 +27,7 @@ opkg list-installed | grep "mod-tee"
 
 After the installation, you should have kmod-ipt-tee package installed automatically as dependency (see screenshot below):
 
-![Traffic mirroring. iptables-mod-tee installed successfully](../img/openwrt1.png){:.post_image}
+[ ![Traffic mirroring. iptables-mod-tee installed successfully](../img/openwrt1.png){:.post_image} ](../img/openwrt1.png)
 
 ## Troubleshooting
 
@@ -40,7 +40,7 @@ iptables -t mangle -A POSTROUTING ! -s 192.168.1.0/24 -j TEE --gateway 192.168.1
 
 Most of the time it will result in an error (see screenshot below).
 
-![Most common error](../img/iptables.png){:.post_image}
+[ ![Most common error](../img/iptables.png){:.post_image} ](../img/iptables.png)
 
 Because iptables-mod-tee is a kernel module it should be loaded before you are trying to get use of it. So, let’s try to load our newly installed module: **xt_TEE**.
 

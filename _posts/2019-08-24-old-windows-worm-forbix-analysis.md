@@ -24,7 +24,7 @@ Forbix is a Windows worm written purely in Visual Basic. First references about 
 
 There are several states this malware can be. As described later in this article, there is are `Active` and `Passive` states. Forbix is stored on the disk in it's passive state which is the encoded version of the actual script (VBE script). This is performed with Microsoft's default VBScript.Encode functionality. Because of this particularity, multiple AV solutions do not flag it as malicious, as it is not a executable file.
 
-![Running file and binwalk](../img/forbix_malware/encoded_file_analysis.png){:.post_image}
+[ ![Running file and binwalk](../img/forbix_malware/encoded_file_analysis.png){:.post_image} ](../img/forbix_malware/encoded_file_analysis.png)
 
 I was surprised to see that, at the time of this writing, about a half of VirusTotal engines do not find the decoded version malicious (28/53): **MalwareBytes**, Comodo, F-Secure, F-Prot, Avira. It gets even more interesting when I change the C2 domain and the names of files this malware creates: 21/53. This time **Kaspersky**, **Microsoft Defender**, **Sophos**, **McAfee** and **ClamAV** also made into the list. 
 
@@ -51,7 +51,7 @@ python decode-vbe.py SysinfY2X.db > decoded_sysinfy2x.vbs
 Once successfully decoded, let's analyse the script, which by the way isn't even obfuscated. From the beginning of the file we already see a bunch of global variables, 
 which are never changed during the script execution. These can easily make into our IOCs list.
 
-![Forbix global variables](../img/forbix_malware/variables.png){:.post_image}
+[ ![Forbix global variables](../img/forbix_malware/variables.png){:.post_image} ](../img/forbix_malware/variables.png)
 
 Looks like the C2 Server was behind realy[.]mooo[.].com. Here an interesting fact: By changing these variables' values, **Windows Defender**, **Kaspersky** and **Sophos** AVs stop 
 picking up this malware. Looks like we are still in the Era of Strings Searching and Matching.
@@ -66,40 +66,40 @@ Following is the main *(infinite)* loop of the worm. It runs every 2 seconds and
 
 All these are implemented in the following functions: `infect_drives`, `infect_registre`, `protect_del`, `kill_old`, `serv_vmd`, and all of them are called inside the infinite loop.
 
-![Forbix infinite loop](../img/forbix_malware/infinite_loop.png){:.post_image}
+[ ![Forbix infinite loop](../img/forbix_malware/infinite_loop.png){:.post_image} ](../img/forbix_malware/infinite_loop.png)
 
 ### infect_drives() function
 
 This function checks for all available drives and infects only **removable**, **CD-ROM** and **network drives** (`DriveType: 1, 3, 4`), avoiding the System Drive. 
 
-![Forbix infecting drives](../img/forbix_malware/drive_types.png){:.post_image}
+[ ![Forbix infecting drives](../img/forbix_malware/drive_types.png){:.post_image} ](../img/forbix_malware/drive_types.png)
 
 First step in drives infection is the self replication. Malware checks if the selected drive is not the System Drive and copies itself to the root directory of the drive. 
 If Manuel.doc already exists, this file is overwritten. Also, once created, the attributes of this file are set to **ReadOnly**, **Hidden** and **System** (`Attribute: 1, 2, 4`).
 
-![Forbix files attributes](../img/forbix_malware/files_attributes.png){:.post_image}
+[ ![Forbix files attributes](../img/forbix_malware/files_attributes.png){:.post_image} ](../img/forbix_malware/files_attributes.png)
 
 Next phase is about .LNK files creation and hiding original files. This also applies to folders; malware changes folders attributes making them hidden and creates .LNK files using the same name and icon. As mentioned earlier, by means of .LNK files this malware infects new machines via USB drives, CDs and Network drives.
 
-![Forbix files replacement](../img/forbix_malware/replace_files.png){:.post_image}
+[ ![Forbix files replacement](../img/forbix_malware/replace_files.png){:.post_image} ](../img/forbix_malware/replace_files.png)
 
 ### infect_registre() function
 
 It is responsible for making the malware persistent. It creates one new Registry Key named with the current active name of the program inside `\Software\Microsoft\Windows\CurrentVersion\Run\`. 
 
-![Forbix registry infection](../img/forbix_malware/infect_registre.png){:.post_image}
+[ ![Forbix registry infection](../img/forbix_malware/infect_registre.png){:.post_image} ](../img/forbix_malware/infect_registre.png)
 
 ### protect_del() function
 
 This function is responsible to maintain an up-to-date copy of the script in Windows temporary directory, by overwriting the existing one *(if any)*.
 
-![Forbix self protection mechanism](../img/forbix_malware/self_protection.png){:.post_image}
+[ ![Forbix self protection mechanism](../img/forbix_malware/self_protection.png){:.post_image} ](../img/forbix_malware/self_protection.png)
 
 ### kill_old() function
 
 In order to keep just one (newest) version of the worm running, function `kill_old` is called periodically to remove the remaining artifacts of the previous Forbix.A version.
 
-![Forbix replace older version](../img/forbix_malware/kill_old.png){:.post_image}
+[ ![Forbix replace older version](../img/forbix_malware/kill_old.png){:.post_image} ](../img/forbix_malware/kill_old.png)
 
 ## C2 communications
 

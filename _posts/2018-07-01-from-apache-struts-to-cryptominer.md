@@ -49,11 +49,11 @@ As you already noticed, the stage 1 of this attack is following next steps:
 
 Stage 2 of this attack is execution of `logo.jpg` as a shell script. It is meant to look for other cryptominers running on the system and terminating those processes (_removing old versions or eliminating competitors?_).
 
-![Stage 2. Terminating processes](../img/miner_shell_script_1.png){:.post_image}
+[ ![Stage 2. Terminating processes](../img/miner_shell_script_1.png){:.post_image} ](../img/miner_shell_script_1.png)
 
 Once other miners have been stopped, there is kind of a MUTEX check implemented. Malware checks if none of specified files are used by any process on the system; then downloads Monero miner and it's configuration file `kworker.conf`.
 
-![Stage 2. MUTEX checks. Monero Miner download](../img/miner_shell_script_2.png){:.post_image}
+[ ![Stage 2. MUTEX checks. Monero Miner download](../img/miner_shell_script_2.png){:.post_image} ](../img/miner_shell_script_2.png)
 
 There are 2 available versions of cryptominer and on of them is dropped if `AES-NI` instructions set is not supported by the processor:
 
@@ -65,7 +65,7 @@ cat /proc/cpuinfo|grep aes>/dev/null
 
 As mentioned above, malicious shell script drops one of the two available versions of `cpuminer 2.3.3`, one for `AES-NI` able processors and for those without support. The version and build time can be found by running `strings` tool against the binaries.
 
-![Stage 3. cpuminer 2.3.3](../img/cpuminer_strings.png){:.post_image}
+[ ![Stage 3. cpuminer 2.3.3](../img/cpuminer_strings.png){:.post_image} ](../img/cpuminer_strings.png)
 
 Below are the checksums of the binaries, which were already uploaded on VirusTotal, long time before the attack.
 
@@ -92,9 +92,9 @@ Configuration file is saved in `wcubpiztlk.conf` and contains information like p
 
 Based on available information on the Internet, 158.69.25[.]77 points to `ca[.]minexmr[.]com`. This particular server is situated in Canada. Knowing that reporting server should be as close to the miners (_in our case victims_), I assume that the majority of targets are planned to be in US and Canada, because using an European server for a victim based in US could increase the _loses_ (a.k.a expired shares).
 
-![MineXMR Servers](../img/miner_servers.png){:.post_image}
+[ ![MineXMR Servers](../img/miner_servers.png){:.post_image} ](../img/miner_servers.png)
 
-![Miners Profit](../img/miner_profit.png){:.post_image}
+[ ![Miners Profit](../img/miner_profit.png){:.post_image} ](../img/miner_profit.png)
 
 Even if CVE-2017-5638 was fixed relatively fast, attackers had success exploiting this for another year or so. This earned them 314.485 XMR (~ $15.286) *at least*.
 

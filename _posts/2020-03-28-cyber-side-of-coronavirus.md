@@ -14,15 +14,15 @@ Recently, I've stumbled across a website reported by [@JayTHL](https://twitter.c
 
 This particular version of WSHRAT was obfuscated using publicly available, free JS obfuscator. It starts with a variable containing the majority of methods, the script calls. All this information being encoded (**bitwise** operations), then **base64** encoded and the resulting string stored as in its **HEX** representation.
 
-![Data variable](../img/coronavirus_malicious_campaigns/data_variable.png){:.post_image}
+[ ![Data variable](../img/coronavirus_malicious_campaigns/data_variable.png){:.post_image} ](../img/coronavirus_malicious_campaigns/data_variable.png)
 
 From the start an anonymous function is created and called, which shuffles around the elements in `_0x5ec3` array, preparing it for the latter use. Right after the permutations are completed, there is a function definition, called `_0x41c8`. The interesting part about it is that script calls it ~500 times, which could mean that it implements some kind of decoding/decryption functionality.
 
-![Malware initial state variables](../img/coronavirus_malicious_campaigns/malware_state.png){:.post_image}
+[ ![Malware initial state variables](../img/coronavirus_malicious_campaigns/malware_state.png){:.post_image} ](../img/coronavirus_malicious_campaigns/malware_state.png)
 
 By default, it is not meant to run as Administrator `var runAsAdmin = ![]`. This variable is never changed to true, however there is `startupElevate()` function which tries to run the script with elevated privileges. It kills the script if fails. Also, the script elevates to high privileged user only if it gets a request from C2 server.
 
-![Malware initial state variables](../img/coronavirus_malicious_campaigns/startup_elevate.png){:.post_image}
+[ ![Malware initial state variables](../img/coronavirus_malicious_campaigns/startup_elevate.png){:.post_image} ](../img/coronavirus_malicious_campaigns/startup_elevate.png)
 
 The general execution flow of this sample is following:
 
@@ -82,25 +82,25 @@ There are several implemented functions which are never called. This could mean 
 
 This function creates an `adodb.stream` to load the file from the disk and sends it to the hardcoded C2 server IP address/domain name on port `6666`, via a `POST` request. The `User-Agent` header contain information about the infected system. Function `information()` is described later in this article. By providing the API endpoint it makes the backend infrastructure flexible and communication not being tightly coupled.
 
-![Upload function](../img/coronavirus_malicious_campaigns/upload.png){:.post_image}
+[ ![Upload function](../img/coronavirus_malicious_campaigns/upload.png){:.post_image} ](../img/coronavirus_malicious_campaigns/upload.png)
 
 ### UnZip(archive_full_path, destination_folder)
 
 This is another unused function. It only works with `zip` archives. While forging HTTP requests, I was able to retrieve a `tar.gz` archive from attackers' C&C server, which makes me think that there was some issues updating the version on the script hosted at `http://45[.]76[.]189[.]29/corona.js`.
 
-![Upload function](../img/coronavirus_malicious_campaigns/unzip.png){:.post_image}
+[ ![Upload function](../img/coronavirus_malicious_campaigns/unzip.png){:.post_image} ](../img/coronavirus_malicious_campaigns/unzip.png)
 
 ### botcontrol()
 
 Killswitch - that's all. However... =)) I couldn't find other versions of the same RAT which implement this and the `offline-keylogger` functionalities at the same time. I assume that `botcontrol()` was added recently, while malware was stripped (probably to avoid detection by adding one extra phase, where keylogger is downloaded)
 
-![Upload function](../img/coronavirus_malicious_campaigns/botcontrol.png){:.post_image}
+[ ![Upload function](../img/coronavirus_malicious_campaigns/botcontrol.png){:.post_image} ](../img/coronavirus_malicious_campaigns/botcontrol.png)
 
 ### information()
 
 Used to get information about the host, like: computer name, user name, operating system, Security Center version, USB spreading flags, country code, provider name. It also contains `Corona` tag, which specifies the campaign the infected host is part of.
 
-![Upload function](../img/coronavirus_malicious_campaigns/information.png){:.post_image}
+[ ![Upload function](../img/coronavirus_malicious_campaigns/information.png){:.post_image} ](../img/coronavirus_malicious_campaigns/information.png)
 
 An example of user agent generated using this function looks something similar to this:
 `WSHRAT|0A87-85F9|RickRollPC|Rick|Microsoft Windows 7 Enterprise|plus|non-av|true - 27/3/120/Corona|GB:Provider`

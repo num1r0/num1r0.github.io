@@ -71,6 +71,6 @@ text = textract.process("/home/user/textract_test.pdf")
 
 Here is my result, after processing a dummy PDF file:
 
-![Textract Python sample script](../img/textract.png){:.post_image}
+[ ![Textract Python sample script](../img/textract.png){:.post_image} ](../img/textract.png)
 
 Congratulations! You successfully installed textract on your Ubuntu Server. I hope you enjoyed this short tutorial.
