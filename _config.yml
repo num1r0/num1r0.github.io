@@ -1,6 +1,6 @@
 title: Persianov on Security
 email: persianov.s@gmail.com
-description: Personal views on today's CyberSecurity, Malware Analysis and Cyber Fraud investigations. Ideas about insecurity in the Digital Era, which affects more people every day.
+description: A research blog by Sveatoslav Persianov. Personal views on today's Cyber Security, Malware Analysis and Cyber Fraud investigations. Ideas about insecurity in the Digital Era.
 url: https://persianov.net
 plugins:
     - jekyll-seo-tag

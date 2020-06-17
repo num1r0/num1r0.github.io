@@ -2,40 +2,34 @@
   description: Extract the flag from this TOP SECRET image
   difficulty: EASY
   added_on: 2019-05-20
-  how_to_solve_link: #
   download_link: https://drive.google.com/open?id=19v97mDZkuvqu-om8B0S-xXU7-1loR8_O
 
 - name: broken_matryoshka
   description: The flag is inside this "matryoshka". Maybe repair it?
   difficulty: EASY
   added_on: 2019-05-20
-  how_to_solve_link: #
   download_link: https://drive.google.com/open?id=13kPXkHbNbqJ1hfwskgrQca7tLq4doaAk
 
 - name: the_flag_within
   description: Who said that JavaScript is not fun? Especially obfuscated JS
   difficulty: EASY
   added_on: 2019-05-20
-  how_to_solve_link: #
   download_link: https://drive.google.com/open?id=1x5eEnG5LLiJQtqv2y2i4_b0in8rImVH9
 
 - name: insider_threat
   description: Just find the flag. It's somewhere in there =))
   difficulty: EASY
   added_on: 2019-05-20
-  how_to_solve_link: #
   download_link: https://drive.google.com/open?id=1cFivIJ0jNZoze1ZTYl9tpgO6W2z0V4ui
 
 - name: hackers_vault
   description: Android reversing with cats and hashes. (hint... <=1Hr)
   difficulty: EASY
   added_on: 2019-05-20
-  how_to_solve_link: #
   download_link: https://drive.google.com/open?id=1M0uEiDvMWaqHMSMNMbnCqN-Q0AtzI7sc
 
 - name: deep_dive
   description: Binaries can be tricky. But not this one :D
   difficulty: EASY
   added_on: 2019-05-20
-  how_to_solve_link: #
   download_link: https://drive.google.com/open?id=181hymbF10TvEq14asgEsvKXg-NbVLGOh
