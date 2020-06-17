@@ -27,7 +27,7 @@ body {
     align-self: center;
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     margin-top: 30px;
 }
 .top_nav a {
@@ -93,6 +93,7 @@ footer {
 }
 .page_title {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.45em;
 }
 .center {
     text-align: center;
