@@ -143,7 +143,7 @@ pre {
     .resp_w { width: 75%; }
     .header_image { 
         width: 50%;
-        height: auto%; 
+        height: auto; 
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -151,7 +151,7 @@ pre {
     .resp_w { width: 60%; }
     .header_image { 
         width: 30%;
-        height: auto%; 
+        height: auto; 
     }
 }
 
