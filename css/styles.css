@@ -153,6 +153,22 @@ pre {
     /* Wide screens */
     .resp_w { width: 60%; }
     .header_image { 
+        width: 45%;
+        height: auto; 
+    }
+}
+@media only screen and (min-width: 1700px) {
+    /* Wide screens */
+    .resp_w { width: 60%; }
+    .header_image { 
+        width: 35%;
+        height: auto; 
+    }
+}
+@media only screen and (min-width: 1900px) {
+    /* Wide screens */
+    .resp_w { width: 60%; }
+    .header_image { 
         width: 26%;
         height: auto; 
     }
