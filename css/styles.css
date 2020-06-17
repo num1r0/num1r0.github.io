@@ -65,7 +65,8 @@ article p {
     margin-top: 55px;
     margin-bottom: 55px;
     border: 2px solid #313030;
-    width: 60%;
+    width: 90%;
+    height: auto;
 }
 .header_image {
     display: block;
