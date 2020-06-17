@@ -26,14 +26,11 @@ body {
     float: none;
     align-self: center;
     text-align: center;
+    font-size: 1.5em;
     margin-bottom: 100px;
     margin-top: 30px;
 }
-.top_nav h1 {
-    display: inline;
-    font-size: 1.5em;
-}
-.top_nav h1 a {
+.top_nav a {
     margin-right: 5px;
     margin-left: 5px;
     color: #dddddd;
