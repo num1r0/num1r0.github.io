@@ -135,15 +135,15 @@ pre {
     .resp_w { width: 90%; }
     .header_image { 
         width: 90%;
-        height: 100%; 
+        height: auto; 
     }
 }
 @media only screen and (min-width: 991px) {
     /* Desktops */
     .resp_w { width: 75%; }
     .header_image { 
-        width: 35%;
-        height: 39%; 
+        width: 50%;
+        height: auto%; 
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -151,7 +151,7 @@ pre {
     .resp_w { width: 60%; }
     .header_image { 
         width: 30%;
-        height: 33%; 
+        height: auto%; 
     }
 }
 
