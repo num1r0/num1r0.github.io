@@ -94,6 +94,9 @@ footer {
     text-decoration: none;
     color: #c5c3c3;
 }
+.page_title {
+    font-family: 'Courier New', Courier, monospace;
+}
 .center {
     text-align: center;
 }
