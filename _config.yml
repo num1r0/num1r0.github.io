@@ -14,4 +14,4 @@ paginate: 7
 paginate_path: /page:num/
 twitter:
     username: s_persianov
-    card: summary
+    card: summary_large_image
