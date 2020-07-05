@@ -9,7 +9,7 @@ CentOS 8 is already here with major updates. One of them being the replacement o
 
 While I was organizing another 1337.MD CTF (the 5th one whoop-whoop!), I decided to upgrade whole infrastructure where CTFd platform was running. Before, it was running on CentOS 7 server with docker-ce and docker-compose installed on it. So the platform was running inside a container, which gave me a easier way to upgrade it. Since majority of articles on the web are still referring to CentOS 7 (even the official Docker documentation), I decided to write this post and help other folks possibly.
 
-**NOTE** `For production >= CentOS 8 environments you probably should use podman instead! You will have to convert docker-compose files into kubernetes objects, by using kompose tool`
+**!!!NOTE!!!** `For production (>= CentOS 8) environments you probably should use podman instead! You will have to convert docker-compose files into kubernetes objects, by using kompose tool`
 
 
 ## Create new user
