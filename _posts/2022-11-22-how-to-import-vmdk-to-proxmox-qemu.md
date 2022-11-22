@@ -25,8 +25,11 @@ These are the steps that I followed to properly import the .vmdk:
     - System: Leave everything by default
     - Disks: Remove any default disks (we don't need anything since we'll be importing)
     - Set CPU/Memory/Network to whatever you need
-2. Copy the .vmdk file to your PVE host using `scp` (e.g.: /tmp directory should do the job)
-3. Now convert and import the .vmdk disk to the newly created VM. For example, if the VM id is `509` and the .vmdk file name is `for509.vmdk`, then the command would be: `qm importdisk 509 for509.vmdk local-lvm --format raw`
+2. Copy the .vmdk file to your PVE host using **scp** (e.g.: /tmp directory should do the job)
+3. Now convert and import the .vmdk disk to the newly created VM. For example, if the VM id is **509** and the .vmdk file name is **for509.vmdk**, then the command would be: 
+```bash
+qm importdisk 509 for509.vmdk local-lvm --format raw
+```
 
 4. IMPORTANT: Wait until the command completes executing. `qm importdisk` imports the disk relatively quickly, but then gets stuck at 100% progress for a while. DO NOT kill it!
     - I recommend running disk import command (step 3) in a separate screen session.
