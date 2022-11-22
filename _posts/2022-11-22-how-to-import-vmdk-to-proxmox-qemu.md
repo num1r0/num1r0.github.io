@@ -31,10 +31,13 @@ These are the steps that I followed to properly import the .vmdk:
 qm importdisk 509 for509.vmdk local-lvm --format raw
 ```
 
-4. IMPORTANT: Wait until the command completes executing. `qm importdisk` imports the disk relatively quickly, but then gets stuck at 100% progress for a while. DO NOT kill it!
+4. IMPORTANT: Wait until the command completes executing. **qm importdisk** imports the disk relatively quickly, but then gets stuck at 100% progress for a while. DO NOT kill it!
     - I recommend running disk import command (step 3) in a separate screen session.
 
-5. Once `qm importdisk` is finished, you need to rescan disks in order to see the newly imported disk in the Hardware section of your VM. Execute the following command: `qm rescan`
+5. Once **qm importdisk** is finished, you need to rescan disks in order to see the newly imported disk in the Hardware section of your VM. Execute the following command: 
+```bash
+qm rescan
+```
 
 6. Attach the disk to VM (double click on the new disk and click "Add" in the pop-up window)
 
