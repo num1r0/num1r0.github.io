@@ -78,7 +78,8 @@ article p {
 }
 footer {
     font-family: Courier New, Courier, monospace;
-    margin-top: 100px;
+    margin-top: 7em;
+    padding-bottom: 2em;
 }
 .title {
     text-align: left;
