@@ -3,7 +3,7 @@ title: How to import .vmdk to Proxmox (qemu)
 description: How to import .vmdk disk file to Proxmox by converting it to .raw using qemu tools. 
 layout: post
 permalink: how-to-import-vmdk-to-proxmox-qemu
-image: "img/vmdk-proxmox-qemu.jpeg"
+image: "img/vmdk-proxmox-qemu/vmdk-proxmox-qemu.jpeg"
 ---
 This is a short post on how to easily and quickly import a .vmdk disk type into your qemu powered virtualization manager (like Proxmox). While the solution may look VERY simple, this actually took me about half of a day to research/test/fail/troubleshoot/etc., so I really hope it may help other people (and me in future, when coming back to this post).
 
