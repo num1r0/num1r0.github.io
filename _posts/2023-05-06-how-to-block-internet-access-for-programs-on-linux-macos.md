@@ -7,7 +7,7 @@ image: "img/block-internet-access-programs/firewall.jpeg"
 ---
 There are times when we may need to block a specific program from accessing the Internet. I'm not saying while analysing some malicious executable, for that you should use a virtual environment (for starters). What if you want to block a text editor like Visual Studio Code? It is SCARY to look at the Wireshark/tcpdump output while executing it! Before even loading my file, it already made several DNS requests and established 4 TCP connections; and that's with disabled analytics/metrics reports.
 
-And no, using [Codium](https://vscodium.com/ "VSCodium - Open Source Binaries of VSCode") is also chatty!
+And yes, [Codium](https://vscodium.com/ "VSCodium - Open Source Binaries of VSCode") is also chatty!
 
 
 ## Steps to block Internet access
