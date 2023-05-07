@@ -12,6 +12,8 @@ This is a short post on how to easily and quickly import a .vmdk disk type into 
 
 While doing my on-demand SANS FOR509 training, I had to import the VM provided by them. And since there's already a Proxmox instance running on my beefed up home lab server, I thought that maybe it is a good idea to just import the VM there. Yeah, right... :D
 
+{% include adsense.html %}
+
 The initial file was an .iso, containing a .7z archive. The archive had 2 files: .vmdk and .vmx. The disk image (.vmdk) was about 8.8GB, with a 500GB of virtual space. After unpacking everything, it was time to start the import.
 
 
@@ -41,5 +43,6 @@ qm rescan
 
 6. Attach the disk to VM (double click on the new disk and click "Add" in the pop-up window)
 
+{% include adsense.html %}
 
 That's it! You now have successfully imported a .vmdk disk into your Proxmox managed VM.
