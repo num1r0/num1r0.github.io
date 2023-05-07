@@ -57,6 +57,8 @@ Once other miners have been stopped, there is kind of a MUTEX check implemented.
 
 [ ![Stage 2. MUTEX checks. Monero Miner download](../img/miner_shell_script_2.png){:.post_image} ](../img/miner_shell_script_2.png)
 
+{% include adsense2.html %}
+
 There are 2 available versions of cryptominer and on of them is dropped if `AES-NI` instructions set is not supported by the processor:
 
 ```bash
