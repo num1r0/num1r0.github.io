@@ -43,6 +43,6 @@ qm rescan
 
 6. Attach the disk to VM (double click on the new disk and click "Add" in the pop-up window)
 
-{% include adsense.html %}
+{% include adsense2.html %}
 
 That's it! You now have successfully imported a .vmdk disk into your Proxmox managed VM.
