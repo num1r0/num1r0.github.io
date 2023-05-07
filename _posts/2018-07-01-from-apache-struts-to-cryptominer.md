@@ -13,6 +13,8 @@ For those who doesn't know (or need a refresher) what is `CVE-2017-5638`; this i
 
 For more details, check [this nice article from TrendMicro](https://blog.trendmicro.com/trendlabs-security-intelligence/cve-2017-5638-apache-struts-vulnerability-remote-code-execution/ "Apache Struts 2").
 
+{% include adsense.html %}
+
 In my case, one of the honeypots mimicking Apache Tomcat got an interesting HTTP request (see below).
 
 ```python
