@@ -9,6 +9,8 @@ There are times when we may need to block a specific program from accessing the 
 
 And yes, [Codium](https://vscodium.com/ "VSCodium - Open Source Binaries of VSCode") is also chatty!
 
+{% include adsense.html %}
+
 ## Steps to block Internet access
 
 1. Create a new local group that we'll use as a Internet contained group
