@@ -9,6 +9,7 @@ Everybody is talking about the coronavirus pandemic, caused by Covid-19. Media i
 
 Recently, I've stumbled across a website reported by [@JayTHL](https://twitter.com/JayTHL "JayTHL Twitter"), which hosted a malicious JavaScript file named `corona.js`. As of the time of writing this article, it is still available on `45[.]76[.]189[.]29` and not blocked by Google Safe Browsing. Since it serves the script without executing it, I think it's safe to assume that this is stage 2 of the attack (or 3, 4, X-1 where X is the last stage). Based on the articles sharing same IOCs, it looks like attackers were sending emails
 
+{% include adsense.html %}
 
 ## General overview
 
@@ -23,6 +24,8 @@ From the start an anonymous function is created and called, which shuffles aroun
 By default, it is not meant to run as Administrator `var runAsAdmin = ![]`. This variable is never changed to true, however there is `startupElevate()` function which tries to run the script with elevated privileges. It kills the script if fails. Also, the script elevates to high privileged user only if it gets a request from C2 server.
 
 [ ![Malware initial state variables](../img/coronavirus_malicious_campaigns/startup_elevate.png){:.post_image} ](../img/coronavirus_malicious_campaigns/startup_elevate.png)
+
+{% include adsense2.html %}
 
 The general execution flow of this sample is following:
 
@@ -76,6 +79,8 @@ This particular version of the WSHRAT has **17** possible commands. Some of them
 
 An interesting detail is that the script opens its file making it impossible to delete by other processes. Attackers usually close the handle during execution of `update` and `elevate` commands.
 
+{% include adsense.html %}
+
 There are several implemented functions which are never called. This could mean that attackers are still developing this script, however I tend to assume that they reused it and modified as they needed. Why not using some code you already spent time writing, right?
 
 ### upload(file_to_upload, c2_api_endpoint)
@@ -122,3 +127,5 @@ An example of user agent generated using this function looks something similar t
 Attackers are in a hurry in my opinion. By trying to catch up with the Coronavirus events, some mistakes have been made in updating the malware. I think they are in the middle of moving to new backend version and infrastructure.
 
 Stay safe!
+
+{% include adsense2.html %}

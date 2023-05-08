@@ -11,6 +11,7 @@ While I was organizing another 1337.MD CTF (the 5th one whoop-whoop!), I decided
 
 **!!!NOTE!!!** `For production (>= CentOS 8) environments you probably should use podman instead! You will have to convert docker-compose files into kubernetes objects, by using kompose tool`
 
+{% include adsense.html %}
 
 ## Create new user
 
@@ -81,3 +82,5 @@ firewall-cmd --reload
 ## Final thoughts
 
 Not sure if we will get a proper support for `docker` on CentOS 8 in future. I will have to check the `podman` and docker-compose files conversion with `kompose` and post here in future.
+
+{% include adsense2.html %}

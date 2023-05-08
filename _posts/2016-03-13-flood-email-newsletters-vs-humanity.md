@@ -20,6 +20,8 @@ The attack vector looks like this:
 
 [ ![Attack vector](../img/attack_vector.png){:.post_image} ](../img/attack_vector.png)
 
+{% include adsense.html %}
+
 Let’s use mailing lists and RSS to email services, like blogtrottr.com, to avoid the necessity of crawling the Web for websites with newsletter subscriptions and add a layer of anonymity.
 Below you can see typical web forms for GNU Mailman and Blogtrotr aggregator:
 
@@ -82,6 +84,8 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+{% include adsense2.html %}
 
 Now, it’s time for the **core.py** script which submits Blogtrotr form requests (install mechanize as a dependency). Because this is just a Proof of Concept, I’ve hard coded a lot of stuff there, but it still floods OK.
 
@@ -171,6 +175,8 @@ def submitForm(browser, formIdentifier, inputData):
     browser.submit()
 ```
 
+{% include adsense.html %}
+
 And the last piece of the puzzle: **fits.py** script. It is “multi-threaded”, using only two threads **(Remember? Educational purposes only)**
 
 ```python
@@ -230,6 +236,8 @@ Execute it like:
 ```bash
 fits.py <number_of_emails_to_send> <path_to_rss_feeds_file> <path_to_recipients_file>
 ```
+
+{% include adsense2.html %}
 
 ## Results.
 

@@ -33,6 +33,8 @@ Basically, these are the steps described on textract [Official Website](https://
 pip install textract
 ```
 
+{% include adsense.html %}
+
 ## Errors installing textract.
 
 This is the main reason, why I’m writing this tutorial. To save you the hassle.
@@ -74,3 +76,5 @@ Here is my result, after processing a dummy PDF file:
 [ ![Textract Python sample script](../img/textract.png){:.post_image} ](../img/textract.png)
 
 Congratulations! You successfully installed textract on your Ubuntu Server. I hope you enjoyed this short tutorial.
+
+{% include adsense2.html %}

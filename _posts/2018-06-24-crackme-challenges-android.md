@@ -32,3 +32,5 @@ Here’s the list of .apk files:
 |[crackme_0x01](https://github.com/num1r0/android_crackmes/tree/master/crackme_0x01)|The very basic crackme challenge. Gives you chance to get familiar with all Android RE tools|`EASY`|June 24, 2018|
 |[crackme_0x02](https://github.com/num1r0/android_crackmes/tree/master/crackme_0x02)|What if JD-GUI doesn't show you the password?|`EASY`|June 24, 2018|
 |[crackme_0x03](https://github.com/num1r0/android_crackmes/tree/master/crackme_0x03)|Some hashes, cats and strings generation.|`EASY`|August 9, 2018|
+
+{% include adsense.html %}

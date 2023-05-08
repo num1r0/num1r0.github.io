@@ -10,7 +10,7 @@ Anyone heard about Forbix worm? Good. Lots of us know how difficult is to remove
 Not so long ago (year 2019), I got hold of a PC which kept beaconing to a C2 server even after being re-imaged several times. And nope, the image was clean.
 Based on the domain name this malware kept trying to connect, it was very easy to determine that it is Forbix indeed. This worm is about 3 years old, written in Visual Basic and not obfuscated at all, yet it kept reappearing after that PC was re-imaged several times.
 
-
+{% include adsense.html %}
 
 ## General information
 
@@ -28,6 +28,7 @@ There are several states this malware can be. As described later in this article
 
 I was surprised to see that, at the time of this writing, about a half of VirusTotal engines do not find the decoded version malicious (28/53): **MalwareBytes**, Comodo, F-Secure, F-Prot, Avira. It gets even more interesting when I change the C2 domain and the names of files this malware creates: 21/53. This time **Kaspersky**, **Microsoft Defender**, **Sophos**, **McAfee** and **ClamAV** also made into the list. 
 
+{% include adsense2.html %}
 
 ## Forbix .LNK files
 
@@ -52,6 +53,8 @@ Once successfully decoded, let's analyse the script, which by the way isn't even
 which are never changed during the script execution. These can easily make into our IOCs list.
 
 [ ![Forbix global variables](../img/forbix_malware/variables.png){:.post_image} ](../img/forbix_malware/variables.png)
+
+{% include adsense.html %}
 
 Looks like the C2 Server was behind realy[.]mooo[.].com. Here an interesting fact: By changing these variables' values, **Windows Defender**, **Kaspersky** and **Sophos** AVs stop 
 picking up this malware. Looks like we are still in the Era of Strings Searching and Matching.
@@ -82,6 +85,8 @@ If Manuel.doc already exists, this file is overwritten. Also, once created, the 
 Next phase is about .LNK files creation and hiding original files. This also applies to folders; malware changes folders attributes making them hidden and creates .LNK files using the same name and icon. As mentioned earlier, by means of .LNK files this malware infects new machines via USB drives, CDs and Network drives.
 
 [ ![Forbix files replacement](../img/forbix_malware/replace_files.png){:.post_image} ](../img/forbix_malware/replace_files.png)
+
+{% include adsense2.html %}
 
 ### infect_registre() function
 
@@ -117,8 +122,9 @@ C2 communications with the server is implemented around 3 commands:
 - `<size>+<name>` - Used to get new version of malware;
 
 
-
 ## Conclusion
 
 Since early 2016 Forbix was found in the wild, infecting Windows PCs. Even if it doesn't use any sophisticated techniques to spread, persist and load payloads, multiple AV engines still
 fail to detect and remove it. Looks like there are still multiple requests to realy[.]mooo[.]com domain nowadays. If you have an old USB drive and not sure to access the files on it or not, make sure to scan it. Before opening any folder or file, check if "Manuel.doc" file exists in the root directory of the drive.
+
+{% include adsense.html %}

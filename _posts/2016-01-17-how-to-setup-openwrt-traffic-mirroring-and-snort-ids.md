@@ -9,6 +9,8 @@ This simple tutorial describes how to configure traffic mirroring on your OpenWR
 
 First of all you need an OpenWRT compatible router (see [Official list](https://wiki.openwrt.org/toh/start "OpenWRT Wiki")) with a freshly installed distribution. In this tutorial I’m using a TP-Link TL-WR841ND with 14.07 Barrier Breaker (see screenshot below).
 
+{% include adsense.html %}
+
 [ ![Traffic mirroring. Barrier Breaker 14.07](../img/openwrt.png){:.post_image} ](../img/openwrt.png)
 
 Use SSH to connect to your network device and install **iptables-mod-tee** package:
@@ -57,6 +59,8 @@ As you probably know, there are 5 tables in iptables:
 3. FILTER table – is the default table and is where all actions, associated with the firewall, typically take place;
 4. SECURITY table – is used for Mandatory Access Control (SELinux gets use of it);
 5. MANGLE table – used for packets alteration actions (e.g. cloning);
+
+{% include adsense2.html %}
 
 The table we need is MANGLE. It permits to modify packets going through our router, or in our case, just to clone them. I used following two rules to implement traffic mirroring:
 

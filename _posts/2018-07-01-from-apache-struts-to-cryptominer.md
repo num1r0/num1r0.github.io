@@ -103,3 +103,5 @@ Based on available information on the Internet, 158.69.25[.]77 points to `ca[.]m
 Even if CVE-2017-5638 was fixed relatively fast, attackers had success exploiting this for another year or so. This earned them 314.485 XMR (~ $15.286) *at least*.
 
 As a conclusion, I would say PATCH! PATCH! and PATCH! This is the easiest and *cheapest* way to stay mitigate a a big part of security risks.
+
+{% include adsense.html %}
