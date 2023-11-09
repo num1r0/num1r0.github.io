@@ -6,6 +6,7 @@ plugins:
     - jekyll-seo-tag
     - jekyll-relative-links
     - jekyll-paginate
+    - jekyll-feed
 relative_links:
     enabled: true
     collections: true
