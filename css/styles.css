@@ -56,7 +56,7 @@ article p {
 article li {
     font-size: 20px;
 }
-article h2 {
+article h2:not(.post_title) {
     padding-top: 1.5em;
 }
 article h3 {
