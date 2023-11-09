@@ -56,6 +56,9 @@ article p {
 article li {
     font-size: 20px;
 }
+article h2 {
+    padding-top: 1.5em;
+}
 .post_meta {
     font-size: 15px;
     margin-top: -10px;
