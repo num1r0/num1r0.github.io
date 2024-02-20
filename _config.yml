@@ -17,3 +17,4 @@ twitter:
     username: s_persianov
     card: summary_large_image
     creator: s_persianov
+include: [.well-known]
