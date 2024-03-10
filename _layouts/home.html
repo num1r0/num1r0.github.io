@@ -4,6 +4,13 @@ layout: default
 
 <h1 class="page_title center">Blog: Latest articles</h1>
 
+<span>
+    {% for tag in site.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}"><span class="red" title="{{ tag_name }}">[</span>{{ tag_name }}<span class="red">]</span></a>
+    {% endfor %}
+</span>
+
 <!-- Pagination -->
 <div class="pagination">
     {% if paginator.next_page %}

@@ -12,6 +12,12 @@
         <meta http-equiv="content-language" content="en"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="google-site-verification" content="J_8Q0-xJba2mH3qk5DYZVANicD-89wVM1SBFiRTTqFs" />
+
+        <!-- Collect all tags -->
+        {% if site.tags != "" %}
+            {% include collecttags.html %}
+        {% endif %}
+        <!-- Collect all tags -->
         <link rel="stylesheet" href="https://persianov.net/css/monokai.css">
         <link rel="stylesheet" href="https://persianov.net/css/styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
