@@ -5,6 +5,7 @@ layout: post
 permalink: install-docker-centos-8
 image: "img/docker-centos-8/docker-centos-8-install.png"
 tags: HowTo
+categories: HowTo
 ---
 CentOS 8 is already here with major updates. One of them being the replacement of well known `yum` with `dnf` package manager. All these updates make the upgrade from CentOS 7 to CentOS 8 difficult and it's even not supported officially. So, in most cases people end up building new CentOS 8 servers and migrating the apps to new infrastructure, or try and upgrade it manually risking running an unsupported version of the OS. You can find more details on [this forum thread](https://forums.centos.org/viewtopic.php?t=71848#p302574 "CentOS 7 to CentOS 8 upgrade script - CentOS").
 

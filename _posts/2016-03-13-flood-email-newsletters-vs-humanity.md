@@ -5,6 +5,7 @@ layout: post
 permalink: flood-email-newsletters-vs-humanity
 image: "img/email_flood.png"
 tags: cyber
+categories: Cyber
 ---
 Aloha! Today I’m gonna show you a simple yet powerful way to flood any mail box from ANY Email Service Provider (ex.: Google, Yahoo, Live.com [aka Hotmail], etc.). This method uses the “flaws” in subscribe feature on many websites.
 

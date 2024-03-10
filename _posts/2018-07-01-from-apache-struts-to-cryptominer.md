@@ -5,6 +5,7 @@ layout: post
 permalink: from-apache-struts-to-cryptominer
 image: "img/apache_struts_cryptominer.png"
 tags: cyber
+categories: Cyber
 ---
 Remember Equifax hack and data of millions being stolen? Then you should also remember the Apache Struts 2 vulnerability, used during that attack. This sounds like an old news, but it seems to be exploited even to the day of this post. Someone is attacking web servers successfully and installs cryptominers, adding victims to a Monero pool.
 
