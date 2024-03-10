@@ -4,6 +4,7 @@ description: How to block programs from accessing the Internet on Linux with the
 layout: post
 permalink: how-to-block-internet-access-for-programs-linux
 image: "img/block-internet-access-programs/firewall.jpeg"
+tags: HowTo
 ---
 There are times when we may need to block a specific program from accessing the Internet. I'm not saying while analysing some malicious executable, for that you should use a virtual environment (for starters). What if you want to block a text editor like Visual Studio Code? It is SCARY to look at the Wireshark/tcpdump output while executing it! Before even loading my file, it already made several DNS requests and established 4 TCP connections; and that's with disabled analytics/metrics reports.
 
