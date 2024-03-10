@@ -1,5 +1,5 @@
 ---
 layout: category
-title: posts/cyber
+title: Cyber
 permalink: '/posts/cyber'
 ---

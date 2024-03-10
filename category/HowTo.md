@@ -1,5 +1,5 @@
 ---
 layout: category
-title: posts/howto
+title: HowTo
 permalink: '/posts/howto'
 ---
