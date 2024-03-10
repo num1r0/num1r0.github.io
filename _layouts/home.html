@@ -5,9 +5,15 @@ layout: default
 <h1 class="page_title center">Blog: Latest articles</h1>
 
 <span>
-    {% for tag in page.tags %}
-      {% capture tag_name %}{{ tag }}{% endcapture %}
-      <a href="/tag/{{ tag_name }}"><span class="red" title="{{ tag_name }}">[</span>{{ tag_name }}<span class="red">]</span></a>
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <li>
+            <a href="{{ site.baseurl }}{{ node.url }}"><span class="red" title="{{ node.title }}">[</span>{{ node.title }}<span class="red">]</span></a>
+          </li>
+        {% endif %}
+      {% endif %}
     {% endfor %}
 </span>
 

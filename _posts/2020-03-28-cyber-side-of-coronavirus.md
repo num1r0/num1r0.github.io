@@ -5,6 +5,7 @@ layout: post
 permalink: cyber-side-of-coronavirus-pandemic
 image: "img/coronavirus_malicious_campaigns/cyber_side_of_coronavirus.png"
 tags: cyber
+categories: posts/cyber
 ---
 Everybody is talking about the coronavirus pandemic, caused by Covid-19. Media is all about it, news published every minute, interviews with top scientists are being held, multiple websites create to track the spread and governments sending emails/SMS notifications to population about latest measures. It's everywhere. Besides all these, multiple security companies confirmed a spike in online scams, phishing attacks and "coronavirus" malicious files. There was a 667% spike in phishing attacks since February, 2020, due to coronavirus fears. Everybody is in rush, people stockpiling and cybercriminals adapting their tools and exploiting unsuspicious users, connected to Internet more than ever.
 
