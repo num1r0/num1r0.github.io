@@ -41,6 +41,17 @@
         <a href="/contact-me.html"><span class="red" title="Contact me">[</span>Contact<span class="red">]</span></a>
         <a href="/feed.xml"><span class="red" title="RSS Feed">[</span>RSS<span class="red">]</span></a>
     </div>
+    <div class="center">
+        Categories: 
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.layout == "category" %}
+              <a class="category" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    </div>
     
     {{content}}
 
