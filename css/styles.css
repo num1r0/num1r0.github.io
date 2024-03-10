@@ -27,7 +27,7 @@ body {
     align-self: center;
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 130px;
+    margin-bottom: 30px;
     margin-top: 30px;
 }
 .top_nav a {
@@ -35,6 +35,14 @@ body {
     margin-left: 5px;
     color: #dddddd;
     text-decoration: none;
+}
+.top_nav_categories {
+    float: none;
+    align-self: center;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 130px;
+    margin-top: 30px;
 }
 a {
     text-decoration: none;
