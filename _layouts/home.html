@@ -4,14 +4,13 @@ layout: default
 
 <h1 class="page_title center">Blog: Latest articles</h1>
 
-<span>
+<span class="center">
+    Categories: 
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
-          <li>
-            <a href="{{ site.baseurl }}{{ node.url }}"><span class="red" title="{{ node.title }}">[</span>{{ node.title }}<span class="red">]</span></a>
-          </li>
+          <a href="{{ site.baseurl }}{{ node.url }}"><span class="red" title="{{ node.title }}">[</span>{{ node.title }} <span class="red">]</span></a>
         {% endif %}
       {% endif %}
     {% endfor %}
