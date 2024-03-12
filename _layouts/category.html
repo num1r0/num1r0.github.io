@@ -18,10 +18,6 @@ layout: default
     {% else %}
         <span class="newer">Newer &gt;&gt;</span>
     {% endif %}
-    <br>
-    <span class="total_posts">
-        Total articles in {{ page.title }}: {{site.posts | size}}
-    </span>
 </div>
 
 {% assign category = page.category | default: page.title %}
