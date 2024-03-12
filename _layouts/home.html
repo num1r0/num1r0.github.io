@@ -2,6 +2,18 @@
 layout: default
 ---
 
+<div class="top_nav_categories center">
+    Categories: 
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <a class="category" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+</div>
+
 <h1 class="page_title center">Blog: Latest articles</h1>
 
 <!-- Pagination -->
