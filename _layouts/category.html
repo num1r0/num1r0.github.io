@@ -13,14 +13,14 @@ layout: default
     {% endif %}
   {% endfor %}
   <br>
+  {% assign category = page.category | default: page.title %}
   <span class="total_posts">
-      Total blog articles: {{pagination.posts | size}}
+      Total blog articles in {{ category }}: {{ site.categories[category] | size}}
   </span>
 </div>
 
 <h1 class="page_title center">Articles in {{ page.title }}</h1>
 
-{% assign category = page.category | default: page.title %}
 {% for post in site.categories[category] %}
     <article class="resp_w">
         <div>
