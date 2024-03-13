@@ -41,7 +41,7 @@ body {
     align-self: center;
     text-align: center;
     font-size: 1.1em;
-    margin-bottom: 130px;
+    margin-bottom: 30px;
     margin-top: 30px;
 }
 a {
@@ -112,6 +112,7 @@ footer {
 .page_title {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.45em;
+    margin-top: 130px;
 }
 .center {
     text-align: center;
