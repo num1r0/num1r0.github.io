@@ -44,6 +44,10 @@ body {
     margin-bottom: 30px;
     margin-top: 30px;
 }
+.category {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 a {
     text-decoration: none;
     color: #fff;
